@@ -38,7 +38,7 @@ function Header() {
         <div className="w-1/2 order-1 flex justify-end items-center md:order-2 md:w-auto">
           {/* 로그인 후 */}
 
-          {user ? (
+          {user.name ? (
             <p className="flex items-center">
               <img
                 className="w-8 rounded-full mr-2"

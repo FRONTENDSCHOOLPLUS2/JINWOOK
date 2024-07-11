@@ -69,7 +69,7 @@ function List() {
       <div className="flex justify-end mr-4">
         {/* 검색 */}
         <Search keyword={keyword} setKeyword={setKeyword} />
-        {user && (
+        {user.name && (
           <Button onClick={() => navigate(`/${type}/new`)}>글작성</Button>
         )}
       </div>
