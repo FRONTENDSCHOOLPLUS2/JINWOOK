@@ -1,0 +1,19 @@
+meta {
+  name: 파일 업로드
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/files
+  body: multipartForm
+  auth: none
+}
+
+query {
+  : 
+}
+
+body:multipart-form {
+  attach: @file(/Users/jinwook/MeetMe/MeetMe/src/assets/default-profile.png)
+}

@@ -1,0 +1,23 @@
+meta {
+  name: 회원가입
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "woook@market.com",
+    "password": "11111111",
+    "name": "우욱",
+    "phone": "01022223333",
+    "address": "서울특별시 중구 퇴계로 324",
+    "type": "user",
+    "profileImage": ""
+  }
+}

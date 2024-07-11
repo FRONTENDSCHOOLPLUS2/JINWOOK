@@ -1,0 +1,15 @@
+meta {
+  name: 이메일 중복체크
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/users/email?email=woook@market.com
+  body: none
+  auth: none
+}
+
+query {
+  email: woook@market.com
+}
