@@ -49,7 +49,7 @@ function Header() {
                 size="md"
                 bgColor="gray"
                 onClick={() => {
-                  setUser(null);
+                  setUser({});
                   navigate("/user/login");
                 }}
               >
